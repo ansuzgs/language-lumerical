@@ -1,0 +1,17 @@
+{
+  "name": "language-lumerical",
+  "version": "0.0.0",
+  "description": "Lumerical language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansuzgs/language-lumerical.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ansuzgs/language-lumerical/issues"
+  },
+  "license": "MIT"
+}

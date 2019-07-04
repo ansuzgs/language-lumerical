@@ -1,0 +1,38 @@
+'scopeName': 'source.lumerical'
+'name': 'Lumerical'
+'fileTypes': ['lsf']
+
+'patterns': [
+  {
+    'match': '\\b[-+]?[0-9]+\.?[0-9]+([eE][-+]?[0-9]+)?\\b'
+    'name': 'constant.numeric.lumerical'
+  }
+  {
+    "match": "#.*$"
+    "name": "comment.line"
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.lumerical'
+  }
+  {
+    'begin': '\"'
+    'end': '\"'
+    'name': 'string.quoted.double.lumerical'
+  }
+  {
+    'match': '\\b(for|if)\\s?\\(.*\\)'
+    'captures':
+      '1':
+            'name': 'keyword.control.lumerical'
+    'name': 'meta.function.lumerical'
+  }
+  {
+    'match': '\\b(set|getresult|write|num2str|select)\\s?\\(.*\\)'
+    'captures':
+      '1':
+            'name': 'entity.name.function.lumerical'
+    'name': 'meta.function.name.lumerical'
+  }
+]

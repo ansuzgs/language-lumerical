@@ -16,4 +16,7 @@
     'body': "run;"
   'getresult statement':
     'prefix': 'gr'
-    'body': "getresult(${1:monitor}, ${2:var})"
+    'body': "getresult(${1:monitor}, ${2:var});"
+  'write statement':
+    'prefix': 'wr'
+    'body': "write(${1:filename}, ${2:var});"

@@ -2,9 +2,8 @@
 
 Syntax highlighting for Lumerical in Atom.
 
-[![GitHub Logo](https://image.flaticon.com/icons/svg/25/25231.svg =100x20)
- GitHub](http://github.com/ansuzgs/language-lumerical)  
-[Atom](https://atom.io/packages/language-lumerical)
+[<img src="https://github.com/favicon.ico" height="20"> GitHub](http://github.com/ansuzgs/language-lumerical)  
+[<img src="https://atom.io/favicon.ico" height="20"> Atom](https://atom.io/packages/language-lumerical)
 
 
 

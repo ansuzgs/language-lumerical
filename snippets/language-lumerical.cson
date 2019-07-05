@@ -1,0 +1,19 @@
+'.source.lumerical':
+  'for statement':
+    'prefix': 'for'
+    'body': "for(${1:var}=${2:start}:${3:end}){\n\t#${4:body}\n}"
+  'if statement':
+    'prefix': 'if'
+    'body': "if(${1:var} ${2:operator} ${3:var}){\n\t#${4:body}\n}"
+  'if-else statement':
+    'prefix': 'ife'
+    'body': "if(${1:var} ${2:operator} ${3:var}){\n\t#${4:body}\n}\nelse{\n\t\#${5:body}\n}"
+  'switchtolayout statement':
+    'prefix': 'sw'
+    'body': "switchtolayout;"
+  'run statement':
+    'prefix': 'r'
+    'body': "run;"
+  'getresult statement':
+    'prefix': 'gr'
+    'body': "getresult(${1:monitor}, ${2:var})"

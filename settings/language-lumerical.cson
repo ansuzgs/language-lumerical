@@ -1,0 +1,5 @@
+'.source.lumerical':
+  'editor':
+    'commentStart': '#'
+    'tabLength': 4
+    'softTabs': true

@@ -20,3 +20,33 @@
   'write statement':
     'prefix': 'wr'
     'body': "write(${1:filename}, ${2:var});"
+  'sweep 1 param':
+    'prefix': 's1'
+    'body': '
+              # Crear el vector del sweep\n
+              ${1:param} = [${2:start}:${3:step}:${4:end}]*1e-9;\n
+              \n
+              # Seleccionar elemento a modificar\n
+              select("${5:elem}");\n
+              \n
+              # Iniciamos bucle de la simulacion\n
+              for(i = 1:length(${1:param})){\n
+                  \t?"Simulation: "i;\n
+                  \t\n
+                  \tswitchtolayout; # Volvemos al modo layout\n
+                  \t\n
+                  \t# Modificando la propiedad del elemento\n
+                  \tset("${6:property}",${1:param}(i));\n
+                  \t\n
+                  \t# Computamos la simulacion\n
+                  \trun;\n
+                  \t\n
+                  \t# Obtenemos los resultados\n
+                  \tT = getresult("${7:monitor}", "${8:variable}");\n
+                  \t\n
+                  \t# Almacenamos los resultados en un txt (csv)\n
+                  \tfor(j = 1:length(T.T)) {\n
+                      \t\twrite("${9:path}/"+num2str(i)+"_"+${1:param}+"_"+num2str(${1:param}(i))+".txt", num2str(T.lambda(j))+", "+num2str(T.T(j)));\n
+                  \t}\n
+              }
+    '

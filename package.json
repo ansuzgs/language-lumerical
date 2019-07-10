@@ -1,6 +1,6 @@
 {
   "name": "language-lumerical",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Lumerical language support in Atom",
   "engines": {
     "atom": "*"

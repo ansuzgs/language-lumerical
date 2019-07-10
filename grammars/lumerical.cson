@@ -45,6 +45,6 @@
   {
     'comment': 'keywords run simulation & switch mode'
     'name': 'keyword.simulation.lumerical'
-    'match': '\\b(run|switchtolayout)\\b'
+    'match': '\\b(run|switchtolayout|selectall|delete)\\b'
   }
 ]

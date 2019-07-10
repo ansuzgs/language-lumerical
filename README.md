@@ -6,7 +6,6 @@ Syntax highlighting for Lumerical in Atom.
 [<img src="https://atom.io/favicon.ico" height="20"> Atom](https://atom.io/packages/language-lumerical)
 
 
-
 # Shortcuts
 
 Some shortcuts:
